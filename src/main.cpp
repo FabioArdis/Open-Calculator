@@ -14,11 +14,11 @@ int main(int argc, char *argv[])
         cout << "Premi 4 per divisione \n";
         cin >> scelta;
         
-        if(scelta >= 4){
+        if(scelta > 4){
                   cout << "Comando errato \n \n";
         }
         
-        if(scelta <= 1){
+        if(scelta < 1){
                   cout << "Comando errato \n \n";   
         }
         
@@ -37,8 +37,8 @@ int main(int argc, char *argv[])
             cout << " = \n";
             cout << x+y;
             cout << "\n";
+            system("PAUSE");
             cin.ignore();
-            return EXIT_SUCCESS;
             }
             
         if(scelta == 2){
@@ -56,8 +56,8 @@ int main(int argc, char *argv[])
             cout << " = \n";
             cout << x-y;
             cout << "\n";
+            system("PAUSE");
             cin.ignore();
-            return EXIT_SUCCESS;
             }
         
         if(scelta == 3){
@@ -94,9 +94,10 @@ int main(int argc, char *argv[])
             cout << " = \n";
             cout << x/y;
             cout << "\n";
+            system("PAUSE");
             cin.ignore();
-            return EXIT_SUCCESS;
             }
         }
     
 }
+
