@@ -13,6 +13,15 @@ int main(int argc, char *argv[])
         cout << "Premi 3 per moltiplicazione \n";
         cout << "Premi 4 per divisione \n";
         cin >> scelta;
+        
+        if(scelta >= 4){
+                  cout << "Comando errato \n \n";
+        }
+        
+        if(scelta <= 1){
+                  cout << "Comando errato \n \n";   
+        }
+        
         if(scelta == 1){
             
             int x;
